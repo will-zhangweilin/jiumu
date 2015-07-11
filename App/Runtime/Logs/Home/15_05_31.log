@@ -1,0 +1,83 @@
+[ 2015-05-31T12:31:25+08:00 ] ::1 /jiumu/List/index/cid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `jm_category_access` [ RunTime:0.0247s ]
+SQL: SELECT `roleid` FROM `jm_category_access` WHERE `catid` = 1 AND `flag` = 0 AND `action` = 'visit'  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `jm_category` [ RunTime:0.0015s ]
+SQL: SELECT `content` FROM `jm_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001879s ]
+
+[ 2015-05-31T12:31:28+08:00 ] ::1 /jiumu/List/index/cid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `jm_category_access` [ RunTime:0.0016s ]
+SQL: SELECT `roleid` FROM `jm_category_access` WHERE `catid` = 1 AND `flag` = 0 AND `action` = 'visit'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jm_category` [ RunTime:0.0014s ]
+SQL: SELECT `content` FROM `jm_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-05-31T12:31:34+08:00 ] ::1 /jiumu/List/index/cid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `jm_category_access` [ RunTime:0.0096s ]
+SQL: SELECT `roleid` FROM `jm_category_access` WHERE `catid` = 2 AND `flag` = 0 AND `action` = 'visit'  [ RunTime:0.0005s ]
+ERR: 模板不存在:./Public/Home/default/List_article.html
+
+[ 2015-05-31T12:31:38+08:00 ] ::1 /jiumu/List/index/cid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `jm_category_access` [ RunTime:0.0085s ]
+SQL: SELECT `roleid` FROM `jm_category_access` WHERE `catid` = 1 AND `flag` = 0 AND `action` = 'visit'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jm_category` [ RunTime:0.0050s ]
+SQL: SELECT `content` FROM `jm_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+

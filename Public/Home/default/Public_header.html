@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title><yang:sitetitle/></title>
+<meta name="keywords" content="<yang:sitekeywords />" />
+<meta name="description" content="<yang:sitedescription />" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--slider-->
+<link href="__PUBLIC__/css/camera.css" rel="stylesheet" type="text/css" media="all" />
+  <script type='text/javascript' src='__PUBLIC__/js/jquery.min.js'></script>
+    <script type='text/javascript' src='__PUBLIC__/js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='__PUBLIC__/js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='__PUBLIC__/js/camera.min.js'></script> 
+     <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true
+			});
+
+			jQuery('#camera_wrap_2').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+	<div class="logo">
+		<h1><a href="index.html"><img src="__PUBLIC__/images/logo.jpg" alt="九木装饰" width="140px" /></a></h1>
+	</div>
+	<div class="header-right">
+		 <div class="header-right-top">
+	 		<h1>九木装饰</h1>
+	 		<h2>九木成林    众志成诚</h2>
+	 		<!-- <h3 id="top_member">
+				<a href="{:U(MODULE_NAME.'/Public/register')}">注册</a>	
+				<a href="{:U(MODULE_NAME.'/Public/login')}">登录</a>	
+				<span>欢迎您，游客！您可以选择</span>	
+				</div>
+				<div id="top_login_ok" style="display:none;">
+				<a href="{:U(MODULE_NAME.'/Member/index')}">会员中心</a>	
+				<a href="{:U(MODULE_NAME.'/Public/logout')}">安全退出</a>
+				<span>欢迎您， </span>
+			</h3> -->
+	 		<div class="top-right">
+	 			<p>
+	 				<a href="{:U(MODULE_NAME.'/Public/register')}">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="{:U(MODULE_NAME.'/Public/login')}">登录</a>	</br>
+	 			咨询热线：400-800-600</br>
+	 			装饰美好空间  筑就幸福生活</p>
+	 		</div>
+		 </div>
+		 <div class="clear"></div>
+	 	 <ul class="nav">
+	 	 	<?php
+	 	 	if($_GET['cid'])
+	 	 	{
+	 	 		$class = '';
+	 	 	}
+	 	 	else
+	 	 	{
+	 	 		$class = '';
+	 	 	}
+
+	 	 	?>
+	        <li class="active"><a href="<yang:siteurl />">
+	        	<h3><span>首页</span>
+	        	<p></p></h3>
+	        	</a>
+	        </li>
+	        <yang:navlist typeid='0'>
+	        <?
+	        if($_GET['id'] == $navlist.id)
+	        {
+	        	$class = 'active';
+	        }
+	        ?>
+	        <li catid ="{$navlist.id}" class="<?=$class?>"><a href="{$navlist.url}">
+	        	<h3><span>{$navlist.name}</span>
+	        	<p></p></h3>
+	        	</a>
+	        </li>
+	        </yang:navlist>
+	     </ul>
+	 </div>
+	 <div class="clear"></div>
+</div>
